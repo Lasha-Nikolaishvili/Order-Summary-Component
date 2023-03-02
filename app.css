@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {   
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --slightly-pale-blue: hsl(245, 75%, 62%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    
+    background-color: var(--pale-blue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+.bg-very-pale-blue {
+    background-color: var(--very-pale-blue);
+}
+
+main {
+    min-height: 100vh;
+}
+
+.c {
+    max-width: 25em;
+    border-radius: 1.2em !important;
+    overflow: hidden;
+    box-shadow: 0px 0px 1.5em hsl(224, 23%, 75%);
+}
+
+.c-title {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.c-text {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+.annual-span {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: .9em;
+}
+
+.pricing-span {
+    color: var(--desaturated-blue);
+    font-size: .9em;
+}   
+
+.change-link {
+    color: var(--bright-blue);
+    font-size: .9em;
+    font-weight: 700;
+}
+
+.change-link:active {
+    color: var(--slightly-pale-blue) !important;
+}
+
+button {
+    font-family: inherit;
+    width: 100% !important;
+    font-size: .9em !important;
+    font-weight: 700 !important;
+    padding: .9em 0px !important;
+}
+
+.btn-payment {
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    border: none !important;
+    box-shadow: 0px .6em 2em hsl(224, 23%, 75%);
+}
+
+.btn-cancel {
+    background-color: white;
+    color: var(--desaturated-blue);
+    border: none !important;
+}
+
+.btn-payment:active, .btn-payment:focus, .btn-payment:hover {
+    background-color: var(--slightly-pale-blue) !important;
+    color: white !important;
+}
+
+.btn-cancel:active, .btn-cancel:focus, .btn-cancel:hover {
+    color: var(--dark-blue) !important;
+    /* border: none !important; */
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 700px) {
+    body {
+       background-image: url(./images/pattern-background-mobile.svg);
+       font-size: 13px;
+    }
+}
